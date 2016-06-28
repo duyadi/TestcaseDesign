@@ -26,7 +26,7 @@
   padding: 30px;
 
   font-weight: 200;
-  font-size: 120%;
+  font-size: 200%;
   line-height: 1.375;
 }
 
@@ -375,10 +375,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li>QA Thinking Tools</li>
 <li>Q&amp;A</li>
 </ul>
-</section>
-  </div>
-  <div class="slide hidden !*- Get the latest reference from [TW India](https:&#x2F;&#x2F;my.thoughtworks.com&#x2F;message&#x2F;240728#240728) recently*!--" id="slide-3">
-    <section class="slide-content"><h3 id="-">什么是测试用例</h3>
+<h3 id="-">什么是测试用例</h3>
 <ul>
 <li>测试用例是为某个特殊目标而编制的一组测试输入、执行条件以及预期结果，以便测试
 某个程序路径或核实是否满足某个特定需求。</li>
@@ -386,7 +383,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-4">
+  <div class="slide hidden" id="slide-3">
     <section class="slide-content"><h3 id="-">常用黑盒用例测试方法</h3>
 <ul>
 <li>等价类划分</li>
@@ -396,7 +393,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden" id="slide-4">
     <section class="slide-content"><h3 id="-">等价类划分</h3>
 <ul>
 <li>等价类划分设计方法就是把所有可能的输入数据划分成若干部分（子集），然后从每一个子集中选取少量具有代表性的数据作为测试用例，测试某等价类的代表值就等于对这一类其他值的测试。</li>
@@ -405,7 +402,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden" id="slide-5">
     <section class="slide-content"><h3 id="-">等价类原则</h3>
 <ul>
 <li>1.在输入条件规定了取值范围的情况下，则可以确立一个有效等价类（在取值范围之内）和两个无效等价类（小于取值范围和大于取值范围）。例如：使用手机发送短信的时候，短信内容长度必须在70个字符之内，则有效等价类：短信内容长度在70个字符之内，无效等价类：短信内容长度为0、短信内容长度大于70</li>
@@ -413,7 +410,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
+  <div class="slide hidden" id="slide-6">
     <section class="slide-content"><h3 id="-">等价类原则</h3>
 <ul>
 <li>3.在输入条件规定了输入值的集合的情况下，则可以确立一个有效等价类和一个无效等价类。比如：发送短信的编码的取值范围是0、3、4、8、15或16，则有效等价类是：短信编码为0或3或4或8或15或16，无效等价类是：短信编码不是0或3或4或8或15或16其中任何一种</li>
@@ -421,7 +418,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-8">
+  <div class="slide hidden" id="slide-7">
     <section class="slide-content"><h3 id="-">等价类原则</h3>
 <ul>
 <li>5.在输入条件是一个布尔量的情况下，可以确立一个有效等价类和一个无效等价类。例如：在神州行手机号码预扣费成功的情况下，允许该用户发送短信，则有效等价类为：神州行预扣费成功，无效等价类为神州行预扣费失败。</li>
@@ -431,14 +428,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><h3 id="-">边界值划分</h3>
 <ul>
 <li>边界条件指的是输入和输入等价类中刚好处于边界、或超过边界或小于边界的状态，使用边界值分析方法设计测试用例应先确定边界情况，然后选取正好等于、刚刚大于或刚刚小于边界的值作为测试数据。</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h3 id="-">边界值原则</h3>
 <ul>
 <li>1.如果输入条件规定了值的范围，则应取刚达到这个范围的边界值设计有效测试用例，以及刚刚超过这个范围的边界值作设计无效测试用例。比如：短信内容的有效长度为70个汉字以内，则有效测试用例：短信内容长度为1，短信内容长度为70个汉字，无效测试用例：短信内容长度为0，短信内容长度为71个汉字。</li>
@@ -446,7 +443,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-11">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h3 id="-">边界值原则</h3>
 <ul>
 <li>3.如果程序的输入或输出是一个有序集合，则应选取集合的第一个元素和最后一个元素设计测试用例。</li>
@@ -455,14 +452,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h3 id="-">因果图分析</h3>
 <ul>
 <li>因果图法是一种适合于描述对于多种条件的组合、相应产生多个动作的形式的测试用例设计方法。</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-13">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><h3 id="-">因果图步骤</h3>
 <ul>
 <li>1.分析软件规格说明描述中, 那些是原因(即输入条件或输入条件的等价类),那些是结果(即输出条件), 并给每个原因和结果赋予一个标识符.</li>
@@ -473,7 +470,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-14">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><h3 id="-">错误猜测</h3>
 <ul>
 <li>错误推测法就是根据经验和直觉推测程序中所有可能存在的各种错误，从而有针对性地设计测试用例的方法。
@@ -482,11 +479,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-15">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h3 id="qa-thinking-tools">QA Thinking Tools</h3>
 </section>
   </div>
-  <div class="slide hidden" id="slide-16">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><h1 id="q-a">Q&amp;A</h1>
 </section>
   </div>

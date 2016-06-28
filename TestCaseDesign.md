@@ -15,7 +15,6 @@ controls: true
 - QA Thinking Tools
 - Q&A
 
---!*- Get the latest reference from [TW India](https://my.thoughtworks.com/message/240728#240728) recently*!--
 
 ### 什么是测试用例
 - 测试用例是为某个特殊目标而编制的一组测试输入、执行条件以及预期结果，以便测试
